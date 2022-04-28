@@ -1,0 +1,124 @@
+@import "utilities/variables";
+
+@mixin centrado {
+    justify-content: center;
+    text-align: center;
+    justify-items: center;    
+}
+
+%hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    animation-duration: 0.5s;
+    color: $color-hover;    
+}
+
+$botonNav: (
+    colorNav: #373737,
+    grosorNav: bold,
+);
+
+body{
+    background-image: url(../img/bg.jpg);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+    nav{
+        .barraNavegacion{
+            @include centrado;
+        }
+        .marca{
+            @include centrado;
+            text-decoration: none;
+            color: $color-marca;
+            font-weight: 700;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            font-size: 2rem;
+            padding-bottom: 0.2rem;
+            &:hover{
+                @extend %hover
+            }
+        }
+        ul{
+            li{
+                margin: 0rem 1rem 0rem 1rem;
+                color: map-get($map: $botonNav , $key: colorNav);
+                font-weight: map-get($map: $botonNav, $key: grosorNav);
+                &:hover{
+                    @extend %hover        
+                }
+            }   
+        }
+        .slogan{
+            font-weight: 900;
+        }
+    }
+    main{
+        padding-bottom: 2rem;
+        .fondo{
+            background-image: url("/img/bg.jpg");            
+        }
+        h1{
+            @include centrado;
+            color: $color-h1;
+            padding-top: 0.8rem;
+            padding-bottom: 1rem;
+            font-size: 1rem;
+            &:hover{
+                @extend %hover
+            }
+        }
+        h2{
+            @include centrado;
+            font-size: 0.8rem;
+        }
+        p{
+            @include centrado;
+        }
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        .derechos{
+            @include centrado;
+            padding-top: 0.5rem;
+            font-size: 0.7rem;
+        }
+        .redes{
+            @include centrado;
+            padding-bottom: 0.4rem;
+            .iconitos{
+                &:hover{
+                    @extend %hover
+                }
+            }
+        }
+    }
+
+}
+
+.imagen{
+    @include centrado;
+    padding: 0.5rem;
+    max-width: 3rem;
+}
+
+.formulario{
+    padding: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.img-fluid{
+    @include centrado;
+    max-height: 33;
+    max-width: auto;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .mediaPic {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,91 @@
+body nav .marca:hover, body nav ul li:hover, body main h1:hover, body footer .redes .iconitos:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  animation-duration: 0.5s;
+  color: #919191; }
+
+body {
+  background-image: url(../img/bg.jpg);
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2rem; }
+  body nav .barraNavegacion {
+    justify-content: center;
+    text-align: center;
+    justify-items: center; }
+  body nav .marca {
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    text-decoration: none;
+    color: #373737;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    padding-bottom: 0.2rem; }
+  body nav ul li {
+    margin: 0rem 1rem 0rem 1rem;
+    color: #373737;
+    font-weight: bold; }
+  body nav .slogan {
+    font-weight: 900; }
+  body main {
+    padding-bottom: 2rem; }
+    body main .fondo {
+      background-image: url("/img/bg.jpg"); }
+    body main h1 {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      color: #5a5a5a;
+      padding-top: 0.8rem;
+      padding-bottom: 1rem;
+      font-size: 1rem; }
+    body main h2 {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      font-size: 0.8rem; }
+    body main p {
+      justify-content: center;
+      text-align: center;
+      justify-items: center; }
+  body footer {
+    position: absolute;
+    bottom: 0; }
+    body footer .derechos {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      padding-top: 0.5rem;
+      font-size: 0.7rem; }
+    body footer .redes {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      padding-bottom: 0.4rem; }
+
+.imagen {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  padding: 0.5rem;
+  max-width: 3rem; }
+
+.formulario {
+  padding: 1rem;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.img-fluid {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  max-height: 33;
+  max-width: auto;
+  padding: 1rem; }
+
+@media only screen and (max-width: 600px) {
+  .mediaPic {
+    width: 100vw; } }
